@@ -33,7 +33,7 @@ class Post extends LitElement {
     
 
     render(){
-        return html`<div class='post-container'><h3>${this.post.title}</h3> <div class="image-container"><image src="/src/image1.jpg" width="100%" height="fit"/></div>
+        return html`<div class='post-container'><h3>${this.post.title}</h3> <div class="image-container"><image src="image1.jpg" width="100%" height="fit"/></div>
     <p>${this.post.description}</p>
     </div>`
     }
