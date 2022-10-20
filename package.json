@@ -1,0 +1,26 @@
+{
+  "name": "ninja-camp",
+  "description": "Webcomponent ninja-camp following open-wc recommendations",
+  "license": "MIT",
+  "author": "ninja-camp",
+  "version": "0.0.0",
+  "main": "index.js",
+  "module": "index.js",
+  "scripts": {
+    "analyze": "cem analyze --litelement",
+    "start": "web-dev-server",
+    "rimraf": "./node_modules/rimraf/bin.js",
+    "build": "./node_modules/rimraf/bin.js dist && rollup -c rollup.config.js",
+    "start:build": "npm run build && es-dev-server --root-dir dist --app-index index.html --compatibility none --open"
+  },
+  "dependencies": {
+    "@open-wc/building-rollup": "^2.0.2",
+    "lit": "^2.0.2",
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.4.17",
+    "@web/dev-server": "^0.1.34"
+  },
+  "customElements": "custom-elements.json"
+}
